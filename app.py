@@ -43,12 +43,13 @@ def main():
         probability = get_prediction_proba(raw_text)
 
         with col1:
+            st.success("Text")
             st.write(raw_text)
 
             st.success("Prediction")
-            emoji_icon = emotions_emoji_dict.get(prediction, "❓")  # Default emoji for unknown
-            st.write("{}: {}".format(prediction.capitalize(), emoji_icon))  # Capitalize the prediction
-            st.write("Confidence: {:.2f}".format(np.max(probability)))  # Format confidence
+            emoji_icon = emotions_emoji_dict.get(prediction, "❓")  
+            st.write("{}: {}".format(prediction.capitalize(), emoji_icon))  
+            st.write("Confidence: {:.2f}".format(np.max(probability)))  
 
         with col2:
             st.success("Prediction Probability")
