@@ -1,1 +1,1 @@
-# Emotion-Recognition-In-Text
+# Emotion-Recognition-in-Text
