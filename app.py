@@ -43,7 +43,6 @@ def main():
         probability = get_prediction_proba(raw_text)
 
         with col1:
-            st.success("Original Text")
             st.write(raw_text)
 
             st.success("Prediction")
